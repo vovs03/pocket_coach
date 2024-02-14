@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pocket_coach/screens/morning_questions.dart';
 import 'base.dart';
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -23,11 +25,17 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        const Text(
-          // 'Selected page: $selectedPage',
-          'Initial page',
+
+        const Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Text(
+            // 'Selected page: $selectedPage',
+            'Пока что в таком варианте: НАДО жать в левом верхнем углу(значок меню временно не доступен)'
+          ),
         ),
+
         Text(
+          // 'ABC',
           '',
           style: Theme.of(context).textTheme.headlineMedium,
         ),
@@ -51,13 +59,28 @@ class NavigationDrawer extends StatelessWidget {
                 color: Colors.blue,
               ),
               child: Text(
-                'Drawer Header',
+                'Меню карманного коуча',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
                 ),
               ),
             ),
+
+            ListTile(
+              leading: const Icon(Icons.alarm_on),
+              title: const Text('Утренние вопросы'),
+              onTap: () {
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (context){
+                      return const MorningQuestionsScreen();
+                    }
+                  )
+                );
+              },
+            ),
+
             ListTile(
               leading: const Icon(Icons.message),
               title: const Text('Базовые вопросы'),
@@ -72,15 +95,7 @@ class NavigationDrawer extends StatelessWidget {
                 
               },
             ),
-            // ListTile(
-            //   leading: const Icon(Icons.account_circle),
-            //   title: const Text('Profile'),
-            //   onTap: () {
-            //     setState(() {
-            //       selectedPage = 'Profile';
-            //     });
-            //   },
-            // ),
+
             // ListTile(
             //   leading: const Icon(Icons.settings),
             //   title: const Text('Settings'),
