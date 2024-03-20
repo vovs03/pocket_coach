@@ -1,5 +1,26 @@
 # Changelog
 
+## v 0.1.3 2024-03-19
+
+- [x] Splash Screen(demo logo)
+
+## v.0.1.2
+
+- MQ [`Morning Qustions`] -  set colors & Font-Size `Cards`
+
+## v.0.1.1
+
+> 2024-02-14 23:12
+
+**Add:**
+
+- `screens/`
+  - [x] `morning_questions`
+
+**Upd:**
+
+- [x] 4_Base_qustions
+
 ## v.0.1.0
 
 **Add:**

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter/services.dart';
+
 import 'package:pocket_coach/screens/my_home_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Pocket Coach using everyday.',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity
       ),
-      home: const MyHomePage(title: 'Pocket Coach'),
+      home: const MyHomePage(title: 'Pocket Coach v.0.1.3'),
     );
   }
 }
