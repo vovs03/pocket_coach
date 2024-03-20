@@ -13,35 +13,45 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // String selectedPage = '';
 
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: Text(widget.title),
+      title: Text(
+        widget.title,
+        style: const TextStyle(
+          fontSize: 25,
+          color: Color.fromARGB(255, 233, 79, 14),
+        ),
+        ),
     ),
     drawer: const NavigationDrawer(),
-    body: Center(
-      child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-
-        const Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Text(
-            // 'Selected page: $selectedPage',
-            'Пока что в таком варианте: НАДО жать в левом верхнем углу(значок меню временно не доступен)'
+    body: SafeArea(
+      child: Center(
+        child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+      
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              'Пока что в таком варианте: НАДО жать в левом верхнем углу',
+            style: TextStyle(
+            fontSize: 24,
+            color: Color.fromARGB(255, 33, 134, 3),
           ),
+            ),
+          ),
+      
+          Text(
+            // 'ABC',
+            '',
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+        ],
+      ),
         ),
-
-        Text(
-          // 'ABC',
-          '',
-          style: Theme.of(context).textTheme.headlineMedium,
-        ),
-      ],
     ),
-  ),
   );
 }
 
@@ -56,7 +66,7 @@ class NavigationDrawer extends StatelessWidget {
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color.fromARGB(255, 3, 180, 74),
               ),
               child: Text(
                 'Меню карманного коуча',
