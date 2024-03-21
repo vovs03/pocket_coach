@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pocket_coach/screens/morning_questions.dart';
 import 'base.dart';
-
+import 'package:pocket_coach/constants/all_questions.dart';
+import 'package:pocket_coach/features/random_question/random_quesion_logic.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -12,6 +13,10 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+// Печатаемый вопрос генерируется случайным образом из 'ОбщегоСпискаВопросов'
+// Все вопросы занесены в список '/constants/all_questions.dart'
+var visibleQuestion = bankQuestions[randomIndex];
+var nextQuestion = visibleQuestion;
 class _MyHomePageState extends State<MyHomePage> {
 
   @override
@@ -31,18 +36,30 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          
+          // Text(
+          //   // Используется генератор случайных вопросов
+          //   nextQuestion,
+
+          //   style: const TextStyle(
+          //   fontSize: 24,
+          //   color: Color.fromARGB(255, 33, 134, 3),
+          //   ),
+          // ),
+
+          // Padding(
+          //   padding: const EdgeInsets.all(16.0),
+          //   child: ElevatedButton(
+          //     onPressed: () {
+          //       visibleQuestion;
+          //     },
+          //     child: const Text('Следующий вопрос'),
+          //   ),
+            
+          // ),
       
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Text(
-              'Пока что в таком варианте: НАДО жать в левом верхнем углу',
-            style: TextStyle(
-            fontSize: 24,
-            color: Color.fromARGB(255, 33, 134, 3),
-          ),
-            ),
-          ),
-      
+          RandomStringGenerator(),
+
           Text(
             // 'ABC',
             '',
