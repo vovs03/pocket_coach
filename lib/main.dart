@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
-      home: const MyHomePage(title: 'Pocket Coach v.0.1.3'),
+      home: const MyHomePage(title: 'Карманный Коуч v.0.2.0'),
     );
   }
 }
