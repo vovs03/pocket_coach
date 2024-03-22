@@ -46,3 +46,7 @@ app.*.map.json
 
 # !Delete for start ios_version
 /ios/*
+
+# !Check for macos
+
+/macos/
