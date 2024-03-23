@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pocket_coach/screens/morning_questions.dart';
 import 'base.dart';
-import 'package:pocket_coach/constants/all_questions.dart';
+// import 'package:pocket_coach/constants/all_questions.dart';
 import 'package:pocket_coach/features/random_question/random_quesion_logic.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -15,8 +15,12 @@ class MyHomePage extends StatefulWidget {
 
 // Печатаемый вопрос генерируется случайным образом из 'ОбщегоСпискаВопросов'
 // Все вопросы занесены в список '/constants/all_questions.dart'
-var visibleQuestion = bankQuestions[randomIndex];
-var nextQuestion = visibleQuestion;
+
+// var currentString = strings[random.nextInt(strings.length)];
+
+// var visibleQuestion = currentString; //bankQuestions[randomIndex];
+// var nextQuestion = visibleQuestion;
+
 class _MyHomePageState extends State<MyHomePage> {
 
   @override
