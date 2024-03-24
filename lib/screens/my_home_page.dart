@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
       title: Text(
         widget.title,
         style: const TextStyle(
-          fontSize: 25,
+          fontSize: 20,
           color: Color.fromARGB(255, 233, 79, 14),
         ),
         ),
@@ -83,60 +83,60 @@ class NavigationDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Drawer(
     child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Color.fromARGB(255, 3, 180, 74),
-              ),
-              child: Text(
-                'Меню карманного коуча',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
+      padding: EdgeInsets.zero,
+      children: <Widget>[
+        const DrawerHeader(
+          decoration: BoxDecoration(
+            color: Color.fromARGB(255, 3, 180, 74),
+          ),
+          child: Text(
+            'Меню карманного коуча',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
             ),
-
-            ListTile(
-              leading: const Icon(Icons.alarm_on),
-              title: const Text('Утренние вопросы'),
-              onTap: () {
-                Navigator.push(
-                  context, 
-                  MaterialPageRoute(builder: (context){
-                      return const MorningQuestionsScreen();
-                    }
-                  )
-                );
-              },
-            ),
-
-            ListTile(
-              leading: const Icon(Icons.message),
-              title: const Text('Базовые вопросы'),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context){
-                      return const BaseScreen();
-                    }
-                  ),
-                );
-                
-              },
-            ),
-
-            // ListTile(
-            //   leading: const Icon(Icons.settings),
-            //   title: const Text('Settings'),
-            //   onTap: () {
-            //     setState(() {
-            //       selectedPage = 'Settings';
-            //     });
-            //   },
-            // ),
-          ],
+          ),
         ),
-      );
+
+        ListTile(
+          leading: const Icon(Icons.alarm_on),
+          title: const Text('Утренние вопросы'),
+          onTap: () {
+            Navigator.push(
+              context, 
+              MaterialPageRoute(builder: (context){
+                  return const MorningQuestionsScreen();
+                }
+              )
+            );
+          },
+        ),
+
+        ListTile(
+          leading: const Icon(Icons.message),
+          title: const Text('Базовые вопросы'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context){
+                  return const BaseScreen();
+                }
+              ),
+            );
+            
+          },
+        ),
+
+        // ListTile(
+        //   leading: const Icon(Icons.settings),
+        //   title: const Text('Settings'),
+        //   onTap: () {
+        //     setState(() {
+        //       selectedPage = 'Settings';
+        //     });
+        //   },
+        // ),
+      ],
+    ),
+  );
 }

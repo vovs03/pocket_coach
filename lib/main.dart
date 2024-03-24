@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
-      home: const MyHomePage(title: 'Карманный Коуч v.0.2.0'),
+      home: const MyHomePage(title: 'Карманный Коуч v.0.2.1'),
     );
   }
 }
