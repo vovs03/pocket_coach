@@ -48,5 +48,6 @@ app.*.map.json
 /ios/*
 
 # !Check for macos
-
 /macos/
+
+/tmp/
