@@ -1,5 +1,15 @@
 # Development
 
+## UI v0.3.1 2024-03-26
+
+### Button
+
+- v0.3.1 замена кнопки с `Elevated` на `Filled` https://api.flutter.dev/flutter/material/ButtonStyle-class.html Дл] людей с плохим зрением важна контрастность цвет шрифта/фона и размер.
+
+<img src="https://github.com/vovs03/pocket_coach/assets/21124057/731e6f52-c2ce-4d04-a2d2-c222dba0a059" width = "360" alt="2024-03-26 v0.3.1 - 800 Questions completed"/>
+
+---
+
 ## Pipeline - Add new questions_set like `300 - 399`
 
 1. Use ♻️ <a href='#parsing_process'>**Parsing process**</a>
