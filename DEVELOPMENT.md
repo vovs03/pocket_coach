@@ -1,5 +1,15 @@
 # Development
 
+## UI
+
+### Button
+
+- v0.3.1 замена кнопки с `Elevated` на `Filled` https://api.flutter.dev/flutter/material/ButtonStyle-class.html Дл] людей с плохим зрением важна контрастность цвет шрифта/фона и размер.
+
+<img src="https://github.com/vovs03/pocket_coach/assets/21124057/731e6f52-c2ce-4d04-a2d2-c222dba0a059" width = "360" alt="2024-03-26 v0.3.1 - 800 Questions completed"/>
+
+---
+
 ## 📜 DevOps: framework for automation
 
 - [ ] ♻️ # 24 **`Script for parsing list of questions`**

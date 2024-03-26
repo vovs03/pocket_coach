@@ -49,5 +49,6 @@ app.*.map.json
 
 # !Check for macos
 /macos/
+/macos/Flutter/
 
 /tmp/
