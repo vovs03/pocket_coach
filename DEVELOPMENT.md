@@ -1,10 +1,18 @@
 # Development
 
+- При изменении содержания файла `pubspeck.yaml` run: `flutter pub get`
+
+## Final Questions v0.3.2
+
+- [x] `28 - 99`, `100 - 199`
+- [x] Add: step-info about space_cleaner to **DevelopmentFlow** (Parsing Process)
+- set new image of Chineeze Sansay.
+
 ## UI v0.3.1 2024-03-26
 
 ### Button
 
-- v0.3.1 замена кнопки с `Elevated` на `Filled` https://api.flutter.dev/flutter/material/ButtonStyle-class.html Дл] людей с плохим зрением важна контрастность цвет шрифта/фона и размер.
+- v0.3.1 замена кнопки с `Elevated` на `Filled` https://api.flutter.dev/flutter/material/ButtonStyle-class.html Для людей с плохим зрением важна контрастность цвет шрифта/фона и размер.
 
 <img src="https://github.com/vovs03/pocket_coach/assets/21124057/731e6f52-c2ce-4d04-a2d2-c222dba0a059" width = "360" alt="2024-03-26 v0.3.1 - 800 Questions completed"/>
 
@@ -32,6 +40,7 @@
 3. Copy transformed data
 
    - Prepare file with `new doze` of questions and save it into `/tmp/input.txt`;
+   - Cleaning spaces: run `$ python3 /scripts/space_cleaner.py`
    - after that, in terminal run `$ python3 ./scripts/parse_questions.py`;
    - copy all `new doze` to `/lib/constants/all_questions.dart`;
      - ![Снимок экрана 2024-03-26 в 02 27 22](https://github.com/vovs03/pocket_coach/assets/21124057/7cfb5b27-6e36-45f8-83b1-24af3c3132a6)
