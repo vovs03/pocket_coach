@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pocket_coach/screens/decart_questions.dart';
 import 'package:pocket_coach/screens/morning_questions.dart';
 import 'base.dart';
 // import 'package:pocket_coach/constants/all_questions.dart';
@@ -123,7 +124,20 @@ class NavigationDrawer extends StatelessWidget {
                 }
               ),
             );
-            
+          },
+        ),
+
+        ListTile(
+          leading: const Icon(Icons.photo_album),
+          title: const Text('Декартовы вопросы'),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context){
+                  return const DecartQuestionScreen();
+                }
+              ),
+            );
           },
         ),
 

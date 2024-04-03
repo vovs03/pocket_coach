@@ -144,26 +144,28 @@ class _RandomStringGeneratorState extends State<RandomStringGenerator> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        
-        Image.asset('assets/images/coach_chineeze_28_r280.png'),
-        const SizedBox(height: 20),
-
-        //TO_DO padding
-        Text(
-          currentString,
-          style: const TextStyle(fontSize: 24),
-        ),
-        const SizedBox(height: 20),
-        FilledButton(
-          onPressed: updateText,
-          child: const Text('Ещё вопрос...',
-            style: TextStyle(fontSize: 20)
+    return SafeArea(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          
+          Image.asset('assets/images/coach_chineeze_28_r280.png'),
+          const SizedBox(height: 20),
+      
+          //TO_DO padding
+          Text(
+            currentString,
+            style: const TextStyle(fontSize: 24),
           ),
-        ),
-      ],
+          const SizedBox(height: 20),
+          FilledButton(
+            onPressed: updateText,
+            child: const Text('Ещё вопрос...',
+              style: TextStyle(fontSize: 20)
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
