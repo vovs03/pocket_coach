@@ -44,10 +44,10 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# !Delete for start ios_version
+# Delete for start ios_version
 /ios/*
 
-# !Check for macos
+# Check for macos
 /macos/
 /macos/Flutter/
 
