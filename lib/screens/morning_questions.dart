@@ -38,10 +38,12 @@ class MorningQuestionsScreen extends StatelessWidget {
                   SizedBox(
                     height: 40,
                   ),
+                  
                   ListTile(
                     leading: Icon(Icons.account_circle,
                     color: Color.fromARGB(255, 233, 79, 14),
                     ),
+                    
                     title: Card(
                       margin: EdgeInsets.only(left: 2.0, right: 2.0),
                       color: Colors.amber,
@@ -53,6 +55,7 @@ class MorningQuestionsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+
                   ListTile(
                     leading: Icon(Icons.photo_album,
                     color: Color.fromARGB(255, 233, 79, 14),

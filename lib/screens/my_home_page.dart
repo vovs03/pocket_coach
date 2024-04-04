@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pocket_coach/constants/titles.dart';
+import 'package:pocket_coach/screens/any_problem_solution.dart';
 import 'package:pocket_coach/screens/decart_questions.dart';
 import 'package:pocket_coach/screens/morning_questions.dart';
 import 'base.dart';
@@ -127,6 +129,28 @@ class NavigationDrawer extends StatelessWidget {
           },
         ),
 
+        // const Divider(),
+
+        ListTile(
+          leading: const Icon(Icons.heat_pump_rounded,
+            color: Color.fromARGB(255, 233, 79, 14),
+          ),
+          
+          title: const Text(t1,
+              style: TextStyle(color: Color.fromARGB(255, 233, 79, 14),),
+            ),
+          
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context){
+                  return const AnyProblemSolutionScreen();
+                }
+              ),
+            );
+          },
+        ),
+
         ListTile(
           leading: const Icon(Icons.photo_album),
           title: const Text('Декартовы вопросы'),
@@ -141,15 +165,6 @@ class NavigationDrawer extends StatelessWidget {
           },
         ),
 
-        // ListTile(
-        //   leading: const Icon(Icons.settings),
-        //   title: const Text('Settings'),
-        //   onTap: () {
-        //     setState(() {
-        //       selectedPage = 'Settings';
-        //     });
-        //   },
-        // ),
       ],
     ),
   );
