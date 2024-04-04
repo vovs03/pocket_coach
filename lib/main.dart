@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/services.dart';
-
 import 'package:pocket_coach/screens/my_home_page.dart';
 
 
@@ -21,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
-      home: const MyHomePage(title: 'Карманный Коуч v.0.3.3 - 2024-04-03'),
+      home: const MyHomePage(title: 'Карманный Коуч v.0.3.4 - 2024-04-04'),
     );
   }
 }
