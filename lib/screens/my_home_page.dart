@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pocket_coach/constants/titles.dart';
 import 'package:pocket_coach/screens/any_problem_solution.dart';
 import 'package:pocket_coach/screens/decart_questions.dart';
+import 'package:pocket_coach/screens/intro.dart';
 import 'package:pocket_coach/screens/morning_questions.dart';
 import 'base.dart';
 // import 'package:pocket_coach/constants/all_questions.dart';
@@ -99,6 +100,24 @@ class NavigationDrawer extends StatelessWidget {
               fontSize: 20,
             ),
           ),
+        ),
+
+        ListTile(
+          leading: const Icon(Icons.info,
+            color: Color.fromARGB(255, 3, 180, 74),
+          ),
+          title: const Text(t0,
+            style: TextStyle(color: Color.fromARGB(255, 3, 180, 74),),
+          ),
+          onTap: () {
+            Navigator.push(
+              context, 
+              MaterialPageRoute(builder: (context){
+                  return const IntroScreen();
+                }
+              )
+            );
+          },
         ),
 
         ListTile(
