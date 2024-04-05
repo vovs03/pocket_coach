@@ -155,7 +155,7 @@ class _RandomStringGeneratorState extends State<RandomStringGenerator> {
           //TO_DO padding
           Text(
             currentString,
-            style: const TextStyle(fontSize: 24),
+            style: const TextStyle(fontSize: 20),
           ),
           const SizedBox(height: 20),
           FilledButton(
