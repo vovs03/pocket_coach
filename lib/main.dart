@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
-      home: const MyHomePage(title: 'Карманный Коуч v.0.3.4 - 2024-04-04'),
+      home: const MyHomePage(title: 'Карманный Коуч v.0.3.5 - 2024-04-05'),
     );
   }
 }
