@@ -45,7 +45,7 @@ app.*.map.json
 /android/app/release
 
 # Delete for start ios_version
-/ios/*
+#/ios/*
 
 # Check for macos
 /macos/
