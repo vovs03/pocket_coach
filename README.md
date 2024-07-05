@@ -1,16 +1,16 @@
 # pocket_coach
 
-A new Flutter project.
+## 📱 App
 
-## Getting Started
+🇷🇺 `RU` - Есть цель/задача, вы самостоятельно прорабатываете ежедневно вопросы. Сохраняя краткие записи в дневник. Еженедельно сверяя свой намеченный курс и реальное состояние дел.
+Вперёд, у вас всё получится!
 
-This project is a starting point for a Flutter application.
+### 🤖 Android
 
-A few resources to get you started if this is your first Flutter project:
+> v.0.3.5 was published in 📲 `Rustore.ru` at 📅 2024-07-02 15:45
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [pocket_coach in rustore.ru](https://www.rustore.ru/catalog/app/com.example.neo_pocket)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Web-version
+
+- [Pocket Coach in web browser](https://pocket.tw1.ru)
