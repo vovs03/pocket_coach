@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pocket_coach/constants/titles.dart';
 
 class IntroScreen extends StatelessWidget {
-  const IntroScreen({Key? key}) : super(key: key);
+  const IntroScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +20,13 @@ class IntroScreen extends StatelessWidget {
       SafeArea(
         child: ListView(
           children: const <Widget>[
-            ListTile(
-              title: Text(t0_1),
-            ),
+            // ListTile(
+            //   title: Text(t0_1),
+            // ),
             
-            ListTile(
-              title: Text(t0_2),
-            ),
+            // ListTile(
+            //   title: Text(t0_2),
+            // ),
 
             // 3
             ListTile(

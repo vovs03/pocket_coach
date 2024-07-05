@@ -6,10 +6,10 @@ import 'package:pocket_coach/screens/intro.dart';
 import 'package:pocket_coach/screens/morning_questions.dart';
 import 'base.dart';
 // import 'package:pocket_coach/constants/all_questions.dart';
-import 'package:pocket_coach/features/random_question/random_quesion_logic.dart';
+import 'package:pocket_coach/features/random_question/random_question_logic.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({super.key, required this.title});
 
   final String title;
 
@@ -17,72 +17,39 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-// Печатаемый вопрос генерируется случайным образом из 'ОбщегоСпискаВопросов'
-// Все вопросы занесены в список '/constants/all_questions.dart'
-
-// var currentString = strings[random.nextInt(strings.length)];
-
-// var visibleQuestion = currentString; //bankQuestions[randomIndex];
-// var nextQuestion = visibleQuestion;
-
 class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: Text(
-        widget.title,
-        style: const TextStyle(
-          fontSize: 20,
-          color: Color.fromARGB(255, 233, 79, 14),
-        ),
-        ),
+      title: Center(
+        child: Text(
+          widget.title,
+          style: const TextStyle(
+            fontSize: 20,
+            color: Color.fromARGB(255, 233, 79, 14),
+          ),
+          ),
+      ),
     ),
+    
     drawer: const NavigationDrawer(),
     body: SafeArea(
-      child: Center(
-        child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           
-          // Text(
-          //   // Используется генератор случайных вопросов
-          //   nextQuestion,
-
-          //   style: const TextStyle(
-          //   fontSize: 24,
-          //   color: Color.fromARGB(255, 33, 134, 3),
-          //   ),
-          // ),
-
-          // Padding(
-          //   padding: const EdgeInsets.all(16.0),
-          //   child: ElevatedButton(
-          //     onPressed: () {
-          //       visibleQuestion;
-          //     },
-          //     child: const Text('Следующий вопрос'),
-          //   ),
-            
-          // ),
-      
+          // QuestionText 
           RandomStringGenerator(),
-
-          Text(
-            // 'ABC',
-            '',
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
         ],
       ),
-        ),
     ),
   );
 }
 
 
 class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer({Key? key}) : super(key: key);
+  const NavigationDrawer({super.key});
 
   @override
   Widget build(BuildContext context) => Drawer(
@@ -182,6 +149,12 @@ class NavigationDrawer extends StatelessWidget {
               ),
             );
           },
+        ),
+
+        ListTile(
+          leading: const Icon(Icons.photo_album),
+          title: const Text('Версия: 0.3.7_1'),
+          onTap: () {},
         ),
 
       ],
