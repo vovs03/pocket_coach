@@ -153,7 +153,7 @@ class NavigationDrawer extends StatelessWidget {
 
         ListTile(
           leading: const Icon(Icons.photo_album),
-          title: const Text('Версия: 0.3.6_5'),
+          title: const Text('Версия: 0.3.7_1'),
           onTap: () {},
         ),
 

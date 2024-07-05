@@ -1,6 +1,6 @@
 name: pocket_coach
 description: "System of self-coaching questions."
-version: 0.3.6+1
+version: 0.3.7+1
 
 environment:
   sdk: '>=3.3.3 <4.0.0'
